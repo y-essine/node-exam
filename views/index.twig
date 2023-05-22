@@ -4,15 +4,21 @@
 <head>
     <script src="/socket.io/socket.io.js"></script>
     <title>Sockets</title>
+    <style>
+        body {
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" id="chat-input" placeholder="Message" onkeypress="sendMessage">
+    <input type="text" id="chat-input" placeholder="Message">
+    <div id="typing" style="color: grey">
+    </div>
     <div id="feed">
-        <p>A new user has connected</p>
     </div>
 
-    <script src="scripts/dom.js" defer></script>
+    <script src="scripts/dom.js"></script>
     <script src="scripts/sockets.js"></script>
 </body>
 
