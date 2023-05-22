@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Sockets</title>
+</head>
+
+<body>
+    <input type="text" id="chat-input" placeholder="Message" onkeypress="sendMessage">
+    <div id="feed">
+        <p>A new user has connected</p>
+    </div>
+
+    <script src="scripts/dom.js" defer></script>
+    <script src="scripts/sockets.js"></script>
+</body>
+
+</html>
